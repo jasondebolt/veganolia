@@ -16,6 +16,7 @@ $ npm install
 ## Running the Flask local dev server
 ```
 $ export FLASK_APP=app
+$ export FLASK_DEBUG=1
 $ flask run
 ```
 

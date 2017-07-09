@@ -1,9 +1,10 @@
-<html>
 <head>
-  <script src="{{ url_for('static', filename='bundle.js') }}"></script>
 </head>
-<body>
-Veganolia!
 
+<body>
+  <div id="reactEntry"></div>
+  <div id="shopping-list"></div>
+
+  <!-- Attach React components -->
+  <script type="text/javascript" src="{{ url_for('static', filename='bundle.js') }}"></script>
 </body>
-</html>

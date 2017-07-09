@@ -4,10 +4,19 @@ import logging
 import json
 import helpers
 import boto3
+import flask
 from flask import Flask, request, session, g, redirect, url_for, abort
 from flask import render_template, flash, jsonify
+import flask_s3
+from flask_s3 import FlaskS3
 
 app = Flask(__name__)
+
+if not app.debug:
+    # Use S3 bucket instead for static assets.
+    s3 = FlaskS3()
+    s3.init_app(app)
+    app.config['FLASKS3_BUCKET_NAME'] = 'zappa-veganolia'
 
 # pylint: disable=C0103,E1101
 secrets_dict = helpers.parse_json_config(

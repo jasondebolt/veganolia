@@ -21,6 +21,11 @@ $ flask run
 
 ## Development
 ```
+DISABLE CHROME CACHING
+- Open developer tools
+- Click the triple vertical dot icon, then settings.
+- Select the "Disable cache (while DevTools is open)" option
+
 The entry point for the app is in js/app.js.
 
 While developing on the frontend, run webpack --watch to keep re-compiling your JavaScript code.
@@ -33,7 +38,7 @@ The "backend" here is a bare-bones Flask app, app.py.
 ## Deploying the dev server to AWS Lambda
 ```
 $ zappa deploy dev
-$ zappa update dev
+$ ./zappa_cli.py update --name dev
 ```
 
 ## Setting up the JS frontend

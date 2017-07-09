@@ -10,6 +10,15 @@ class ShoppingList extends React.Component {
           <li>Instagram</li>
           <li>WhatsApp</li>
           <li>Oculus</li>
+          <li>Jason</li>
+          <li>hey</li>
+          <li>yo</li>
+          <li>yoon</li>
+          <li>test</li>
+          <li>again</li>
+          <li>foo</li>
+          <li>bar</li>
+          <li>baz</li>
         </ul>
       </div>
     );

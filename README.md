@@ -1,4 +1,4 @@
-# veganoloia
+# veganolia
 
 ## Setting up python
 ```

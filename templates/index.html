@@ -1,27 +1,9 @@
 <html>
 <head>
-  <script src="{{ url_for('static', filename='bower_components/react/react.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='bower_components/react/react-dom.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='bundle.js') }}"></script>
 </head>
 <body>
 Veganolia!
-<div id="content"></div>
 
-<script type="text/jsx">
-
-  /*** @jsx React.DOM */
-
-  var realPython = React.createClass({
-    render: function() {
-      return (<h2>Greetings, from Real Python!</h2>);
-    }
-  });
-
-  ReactDOM.render(
-    React.createElement(realPython, null),
-    document.getElementById('content')
-  );
-
-</script>
 </body>
 </html>
